@@ -1,0 +1,17 @@
+.logo {
+  display: flex;
+  justify-content: space-around;
+  width: 150px;
+  height: 220px;
+  margin-top: 0px;
+}
+.div1 {
+  display: flex;
+}
+body {
+  background-image: url("fundo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}

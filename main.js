@@ -1,0 +1,229 @@
+const data = [
+  {
+    title: "Maratona Internacional da Cidade",
+    Data: "Data: 12 de maio de 2026",
+    Horário: "Horário: 7h00 às 14h00",
+    Estado: "Estado: São Paulo",
+    Cidade: "Cidade: São Paulo",
+    Local: "Local: Avenida Paulista e bairros centrais",
+    Detalhes: "Inscrições abertas para atletas profissionais e amadores. Postos de hidratação a cada 5 km. Premiações para as três primeiras categorias geral masculina e feminina.",
+    categoria: "Corrida de Rua",
+    image: "maratona.jpg",
+    linkpg: "maratona.html"
+  },
+  {
+    title: "Copa Nacional de Futebol Sub-20",
+    Data: "Data: 3 a 20 de julho de 2025",
+    Horário: "Horário: Partidas às 15h e 19h",
+    Estado: "Estado: Rio de Janeiro",
+    Cidade: "Cidade: Rio de Janeiro",
+    Local: "Local: Estádio Maracanã e Estádio Nilton Santos",
+    Detalhes: "Participação dos principais clubes do Brasil. Transmissão ao vivo e venda de ingressos online.",
+    categoria: "Futebol",
+    image: "copa.jpg",
+    linkpg: "copa.html"
+  },
+  {
+    title: "Desafio de Triatlo Costa Azul",
+    Data: "Data: 8 de agosto de 2025",
+    Horário: "Horário: Início às 6h30",
+    Estado: "Estado: Bahia",
+    Cidade: "Cidade: Porto Seguro",
+    Local: "Local: Praia do Mutá e trilhas próximas",
+    Detalhes: "Distâncias: 1,5km natação, 40km ciclismo e 10km corrida.",
+    categoria: "Triatlo",
+    image: "Triatlo.jpg",
+    linkpg: "triatlo.html"
+  },
+  {
+    title: "Etapa do Mundial de Surfe",
+    Data: "Data: 14 a 18 de setembro de 2025",
+    Horário: "Horário: 8h00 às 17h00",
+    Estado: "Estado: Santa Catarina",
+    Cidade: "Cidade: Florianópolis",
+    Local: "Local: Praia da Joaquina",
+    Detalhes: "Presença dos melhores surfistas do mundo, entrada gratuita.",
+    categoria: "Surfe",
+    image: "Surfe.jpg",
+    linkpg: "surfe.html"
+  },
+  {
+    title: "Campeonato Estadual de Basquete Feminino",
+    Data: "Data: 1 a 20 de outubro de 2025",
+    Horário: "Horário: Jogos às 18h e 20h30",
+    Estado: "Estado: Minas Gerais",
+    Cidade: "Cidade: Belo Horizonte",
+    Local: "Local: Ginásio Mineirinho",
+    Detalhes: "Equipes femininas de várias regiões disputando vaga para o nacional.",
+    categoria: "Basquete",
+    image: "Basquete.jpg",
+    linkpg: "basquete.html"
+  },
+  {
+    title: "Corrida Noturna Solidária",
+    Data: "Data: 27 de novembro de 2025",
+    Horário: "Horário: 19h00",
+    Estado: "Estado: Paraná",
+    Cidade: "Cidade: Curitiba",
+    Local: "Local: Parque Barigui",
+    Detalhes: "Percursos de 5km e 10km com luzes especiais e música ao vivo.",
+    categoria: "Corrida de Rua",
+    image: "Corrida de Rua.jpg",
+    linkpg: "corridarua.html"
+  },
+  {
+    title: "Festival de Esportes Radicais",
+    Data: "Data: 5 e 6 de dezembro de 2025",
+    Horário: "Horário: 10h00 às 20h00",
+    Estado: "Estado: Rio Grande do Sul",
+    Cidade: "Cidade: Porto Alegre",
+    Local: "Local: Parque da Redenção",
+    Detalhes: "Skate, BMX, escalada e parkour, com oficinas e food trucks.",
+    categoria: "Esportes Radicais",
+    image: "radical.jpg",
+    linkpg: "radical.html"
+  },
+  {
+    title: "Campeonato de Jiu-Jitsu Open",
+    Data: "Data: 15 e 16 de janeiro de 2026",
+    Horário: "Horário: 9h00 às 18h00",
+    Estado: "Estado: Goiás",
+    Cidade: "Cidade: Goiânia",
+    Local: "Local: Goiânia Arena",
+    Detalhes: "Inscrição antecipada, premiação em dinheiro e troféus.",
+    categoria: "Artes Marciais",
+    image: "Artes Marciais.jpg",
+    linkpg: "artesmarciais.html"
+  },
+  {
+    title: "Regata Internacional da Baía",
+    Data: "Data: 20 de fevereiro de 2026",
+    Horário: "Horário: 9h00 às 16h00",
+    Estado: "Estado: Rio de Janeiro",
+    Cidade: "Cidade: Rio de Janeiro",
+    Local: "Local: Baía de Guanabara",
+    Detalhes: "Provas para veleiros, largada da Marina da Glória.",
+    categoria: "Vela",
+    image: "Vela.jpg",
+    linkpg: "vela.html"
+  },
+  {
+    title: "Torneio de Tênis Aberto",
+    Data: "Data: 10 a 15 de março de 2026",
+    Horário: "Horário: 8h00 às 18h00",
+    Estado: "Estado: São Paulo",
+    Cidade: "Cidade: Campinas",
+    Local: "Local: Clube de Tênis de Campinas",
+    Detalhes: "Aberto a amadores e profissionais. Inscrições até 1º de março.",
+    categoria: "Tênis",
+    image: "Tênis.jpg",
+    linkpg: "tenis.html"
+  },
+  {
+    title: "Copa Universitária de Handebol",
+    Data: "Data: 1 a 7 de abril de 2026",
+    Horário: "Horário: 14h00 às 21h00",
+    Estado: "Estado: Distrito Federal",
+    Cidade: "Cidade: Brasília",
+    Local: "Local: Ginásio Nilson Nelson",
+    Detalhes: "Competições entre universidades públicas e privadas.",
+    categoria: "Handebol",
+    image: "Handebol.jpg",
+    linkpg: "handebol.html"
+  },
+  {
+    title: "Desafio de Ciclismo de Montanha",
+    Data: "Data: 12 de abril de 2026",
+    Horário: "Horário: 7h00 às 15h00",
+    Estado: "Estado: Minas Gerais",
+    Cidade: "Cidade: Ouro Preto",
+    Local: "Local: Serra do Caraça",
+    Detalhes: "Percursos de 30km e 50km. Apoio técnico e ambulância.",
+    categoria: "Ciclismo",
+    image: "Ciclismo.jpg",
+    linkpg: "ciclismo.html"
+  },
+  {
+    title: "Circuito de Natação em Águas Abertas",
+    Data: "Data: 25 de maio de 2026",
+    Horário: "Horário: 7h30 às 12h00",
+    Estado: "Estado: Rio de Janeiro",
+    Cidade: "Cidade: Angra dos Reis",
+    Local: "Local: Praia do Dentista",
+    Detalhes: "Distâncias de 1,5km, 3km e 5km. Supervisão médica.",
+    categoria: "Natação",
+    image: "Natação.jpg",
+    linkpg: "natação.html"
+  },
+  {
+    title: "Campeonato de Vôlei de Praia Misto",
+    Data: "Data: 10 e 11 de junho de 2026",
+    Horário: "Horário: 9h00 às 18h00",
+    Estado: "Estado: Ceará",
+    Cidade: "Cidade: Fortaleza",
+    Local: "Local: Praia do Futuro",
+    Detalhes: "Duplas mistas em torneio com premiações e integração.",
+    categoria: "Vôlei de Praia",
+    image: "Vôlei de Praia.jpg",
+    linkpg: "volei.html"
+  },
+  {
+    title: "Desafio de Corrida de Obstáculos",
+    Data: "Data: 30 de junho de 2026",
+    Horário: "Horário: 8h00 às 16h00",
+    Estado: "Estado: São Paulo",
+    Cidade: "Cidade: São Carlos",
+    Local: "Local: Parque Ecológico",
+    Detalhes: "Provas solo e em equipe. Para todas as idades.",
+    categoria: "Corrida com Obstáculos",
+    image: "Corrida com Obstáculos.jpg",
+    linkpg: "corridaobstaculos.html"
+  }
+
+];
+
+const cardContainer = document.querySelector(".card-container");
+const searchInput = document.querySelector("#searchInput");
+
+const displayData = (data) => {
+  if (data.length === 0) {
+    cardContainer.innerHTML = "<p class='no-results'>Nenhum resultado encontrado.</p>";
+    return;
+  }
+
+  const cardsHTML = data.map(e => `
+    <div class="card">
+      <img src="${e.image}" alt="${e.title}" />
+       <a href="${e.linkpg}""title=${encodeURIComponent(e.title)}">
+          <h3>${e.title}</h3>
+      </a>
+      <p>${e.Data}</p>
+      <p>${e.Horário}</p>
+      <p>${e.Estado}</p>
+      <p>${e.Cidade}</p>
+      <p>${e.Local}</p>
+      <p>${e.Detalhes}</p>
+      <p>${e.categoria}</p>
+    </div>
+  `).join("");
+
+  cardContainer.innerHTML = cardsHTML;
+};
+
+let debounceTimeout;
+
+searchInput.addEventListener("keyup", (e) => {
+  clearTimeout(debounceTimeout);
+  debounceTimeout = setTimeout(() => {
+    const searchValue = e.target.value.toLowerCase();
+
+    const searchResults = data.filter(i =>
+      i.Estado.toLowerCase().includes(searchValue) ||
+      i.Cidade.toLowerCase().includes(searchValue)
+    );
+
+    displayData(searchValue ? searchResults : data);
+  }, 300);
+});
+
+window.addEventListener("load", () => displayData(data));
