@@ -1,17 +1,35 @@
-.logo {
-  display: flex;
-  justify-content: space-around;
-  width: 150px;
-  height: 220px;
-  margin-top: 0px;
-}
-.div1 {
-  display: flex;
-}
+/* Definindo a imagem de fundo para o corpo */
 body {
-  background-image: url("fundo.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-image: url('background.jpg'); /* Substitua 'background.jpg' pelo caminho da sua imagem */
+  background-size: cover; /* Faz a imagem cobrir todo o espaço disponível */
+  background-position: center center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Garante que a imagem não se repita */
+  margin: 0; /* Remove as margens padrão do body */
+  font-family: Arial, sans-serif; /* Define a fonte padrão */
+}
+
+/* Estilos para a div1 */
+.div1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white; /* Cor do texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra para melhorar a visibilidade do texto */
+}
+
+.div1 a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.div1 h1 {
+  font-size: 24px;
+  margin: 10px 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+.logo {
+  max-width: 150px; /* Limita o tamanho da imagem */
+  display: block;
+  margin-bottom: 20px;
 }
